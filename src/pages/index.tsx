@@ -22,7 +22,9 @@ const Number: React.FC<{ danger?: boolean }> = ({
 }) => (
   <h1
     className={tw(
-      `text-9xl w-48 text-right ${danger ? 'text-red-600' : 'text-white'}`
+      `text-7xl w-28 sm:(text-8xl w-36) md:(text-9xl w-48) text-right ${
+        danger ? 'text-red-600' : 'text-white'
+      }`
     )}
   >
     {children}
