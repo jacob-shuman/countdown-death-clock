@@ -91,7 +91,7 @@ export const decrementDuration = (
       minutes: 59,
       seconds: 59,
     };
-    onHour?.(updatedDuration);
+    onDay?.(updatedDuration);
 
     return updatedDuration;
   }
@@ -105,7 +105,7 @@ export const decrementDuration = (
       minutes: 59,
       seconds: 59,
     };
-    onHour?.(updatedDuration);
+    onYear?.(updatedDuration);
 
     return updatedDuration;
   }
