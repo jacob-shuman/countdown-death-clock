@@ -15,6 +15,7 @@ function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Death clock based on the movie 2019 movie Countdown"
         />
+        <link rel="shortcut icon" href="/countdown.svg" />
 
         <meta name="mobile-web-app-capable" content="yes" />
 
