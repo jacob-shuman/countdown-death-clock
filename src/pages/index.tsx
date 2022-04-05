@@ -1,8 +1,13 @@
 import useTimer from '@hooks/useTimer';
 import type { NextPage } from 'next';
 import { tw } from 'twind';
-import { IoPlayForward, IoPlayForwardOutline } from 'react-icons/io5';
+import {
+  IoLogoGithub,
+  IoPlayForward,
+  IoPlayForwardOutline,
+} from 'react-icons/io5';
 import NextImage from 'next/image';
+import NextLink from 'next/link';
 
 const NumberContainer: React.FC<{
   value: number;
@@ -51,16 +56,27 @@ const Home: NextPage = () => {
       <nav className={tw(`fixed top-0 p-4 w-full`, `flex justify-between`)}>
         <NextImage src="/countdown.svg" width="48" height="48" />
 
-        <button
-          className={tw(`focus:outline-none`)}
-          onClick={() => toggleSpeed()}
-        >
-          {speed === 'normal' ? (
-            <IoPlayForwardOutline className={tw(`w-auto h-8 text-white`)} />
-          ) : (
-            <IoPlayForward className={tw(`w-auto h-8 text-white`)} />
-          )}
-        </button>
+        <div className={tw(`flex items-center space-x-8`)}>
+          <NextLink
+            passHref
+            href="https://github.com/jacob-shuman/countdown-death-clock"
+          >
+            <a className={tw(`focus:outline-none`)}>
+              <IoLogoGithub className={tw(`w-auto h-8 text-white`)} />
+            </a>
+          </NextLink>
+
+          <button
+            className={tw(`focus:outline-none`)}
+            onClick={() => toggleSpeed()}
+          >
+            {speed === 'normal' ? (
+              <IoPlayForwardOutline className={tw(`w-auto h-8 text-white`)} />
+            ) : (
+              <IoPlayForward className={tw(`w-auto h-8 text-white`)} />
+            )}
+          </button>
+        </div>
       </nav>
 
       <main
