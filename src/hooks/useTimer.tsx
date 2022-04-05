@@ -27,6 +27,7 @@ export interface TimerCallbacks extends TimerDurationCallbacks {
 export interface TimerState {
   hasStarted: boolean;
   isRunning: boolean;
+  speed: 'normal' | 'fast';
   elapsedTime: TimerDuration;
 }
 
@@ -40,6 +41,7 @@ const getRandom = (min: number, max: number) => {
 export const DEFAULT_TIMER_STATE: TimerState = {
   hasStarted: false,
   isRunning: false,
+  speed: 'normal',
   elapsedTime: {
     years: getRandom(0, 99),
     days: getRandom(0, 364),
@@ -153,7 +155,7 @@ export const useTimer = (
     }) ??
       DEFAULT_TIMER_STATE
   );
-  const { isRunning, elapsedTime } = state;
+  const { isRunning, elapsedTime, speed } = state;
   const onTick = useCallback(
     (elapsedTime: TimerDuration) => options?.onTick?.(elapsedTime),
     [options]
@@ -206,6 +208,17 @@ export const useTimer = (
     });
   };
 
+  const toggleSpeed = () => {
+    switch (speed) {
+      case 'normal':
+        setState({ speed: 'fast' });
+        break;
+      default:
+        setState({ speed: 'normal' });
+        break;
+    }
+  };
+
   useInterval(
     () =>
       tick(elapsedTime, setState, {
@@ -218,10 +231,10 @@ export const useTimer = (
         onStart,
         onPause,
       }),
-    isRunning ? 1000 : null
+    isRunning ? (speed === 'normal' ? 1000 : 1) : null
   );
 
-  return { ...state, start, pause, toggle, set };
+  return { ...state, start, pause, toggle, set, toggleSpeed };
 };
 
 export default useTimer;
