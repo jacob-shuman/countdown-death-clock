@@ -49,12 +49,7 @@ const Home: NextPage = () => {
   return (
     <>
       <nav className={tw(`fixed top-0 p-4 w-full`, `flex justify-between`)}>
-        <NextImage
-          src="/countdown.svg"
-          width="48"
-          height="48"
-          className={tw(`text-white bg-white`)}
-        />
+        <NextImage src="/countdown.svg" width="48" height="48" />
 
         <button
           className={tw(`focus:outline-none`)}
