@@ -1,6 +1,6 @@
 {
-  "name": "Coundown",
-  "short_name": "Coundown",
+  "name": "Countdown",
+  "short_name": "Countdown",
   "icons": [
     {
       "src": "countdown.svg",
@@ -10,6 +10,6 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "start_url": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait"
 }
