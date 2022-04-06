@@ -208,10 +208,6 @@ function App({ Component, pageProps }: AppProps) {
           content="Death clock based on the movie 2019 movie Countdown"
         />
         <meta property="og:site_name" content="Countdown" />
-        {/* <meta
-          property="og:image"
-          content="https://countdown.jacob-shuman.ca/icons/apple-icon-180.png"
-        /> */}
         <meta
           property="og:image"
           content="https://countdown.jacob-shuman.ca/splash/apple-splash-2208-1242.jpg"
@@ -224,10 +220,6 @@ function App({ Component, pageProps }: AppProps) {
           name="twitter:description"
           content="Death clock based on the movie 2019 movie Countdown"
         />
-        {/* <meta
-            name="twitter:image"
-            content="https://countdown.jacob-shuman.ca/icons/manifest-icon-192.png"
-          /> */}
         <meta
           name="twitter:image"
           content="https://countdown.jacob-shuman.ca/splash/apple-splash-2208-1242.jpg"
