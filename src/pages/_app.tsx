@@ -31,7 +31,7 @@ function App({ Component, pageProps }: AppProps) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="apple-icon-180.png"
+          href="icons/apple-icon-180.png"
         />
 
         <link
@@ -198,28 +198,33 @@ function App({ Component, pageProps }: AppProps) {
           href="/icons/favicon-16x16.png"
         />
         
-        <link rel="shortcut icon" href="/favicon.ico" /> */}
+         */}
 
-        {/* <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="https://yourdomain.com" />
-        <meta name="twitter:title" content="PWA App" />
-        <meta name="twitter:description" content="Best PWA App in the world" />
-        <meta
-          name="twitter:image"
-          content="https://yourdomain.com/icons/android-chrome-192x192.png"
-        />
-        <meta name="twitter:creator" content="@DavidWShadow" />
+        <meta property="og:url" content="https://countdown.jacob-shuman.ca/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="PWA App" />
-        <meta property="og:description" content="Best PWA App in the world" />
-        <meta property="og:site_name" content="PWA App" />
-        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:title" content="Countdown" />
+        <meta
+          property="og:description"
+          content="Death clock based on the movie 2019 movie Countdown"
+        />
+        <meta property="og:site_name" content="Countdown" />
         <meta
           property="og:image"
-          content="https://yourdomain.com/icons/apple-touch-icon.png"
+          content="https://countdown.jacob-shuman.ca/icons/apple-icon-180.png"
         />
 
-        */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://countdown.jacob-shuman.ca/" />
+        <meta name="twitter:title" content="Countdown" />
+        <meta
+          name="twitter:description"
+          content="Death clock based on the movie 2019 movie Countdown"
+        />
+        <meta
+          name="twitter:image"
+          content="https://countdown.jacob-shuman.ca/icons/manifest-icon-192.png"
+        />
+        <meta name="twitter:creator" content="@jacob_shuman7" />
       </NextHead>
 
       <Component {...pageProps} />

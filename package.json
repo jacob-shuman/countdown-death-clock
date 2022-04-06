@@ -1,5 +1,6 @@
 {
   "name": "countdown-death-clock",
+  "description": "Death clock based on the movie 2019 movie Countdown",
   "version": "1.0.0",
   "private": true,
   "scripts": {
