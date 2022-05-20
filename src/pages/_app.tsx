@@ -13,7 +13,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="application-name" content="Countdown" />
         <meta
           name="description"
-          content="Death clock based on the movie 2019 movie Countdown"
+          content="A re-creation of the death clock from the 2019 movie Countdown"
         />
         <link rel="shortcut icon" href="/countdown.svg" />
 
@@ -218,7 +218,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:title" content="Countdown" />
         <meta
           name="twitter:description"
-          content="Death clock based on the movie 2019 movie Countdown"
+          content="A re-creation of the death clock from the 2019 movie Countdown"
         />
         <meta
           name="twitter:image"
