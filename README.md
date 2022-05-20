@@ -9,7 +9,7 @@
   
 </details>
 
-## About the project
+## What is this?
 - This is a reconstruction of the death clock from the 2019 movie [Countdown](https://www.imdb.com/title/tt10039344/).
 - The timer is completly randomized on every refresh and is never tracked.
 - The site can be installed to your device as a [Progressive Web App](https://web.dev/what-are-pwas/)
